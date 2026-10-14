@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Ruya POS</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 32px 24px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    h2 {
+      color: var(--text);
+      font-size: 20px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 32px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #334155;
+      margin-top: 20px;
+    }
+
+    p,
+    li {
+      color: #334155;
+      font-size: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #EEF2FF;
+      color: var(--primary);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #F1F5F9;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <span class="badge">Official Legal Document</span>
+    <h1>Privacy Policy for Ruya POS</h1>
+    <p><strong>Effective Date:</strong> October 8, 2026<br>
+      <strong>Application:</strong> Ruya POS - Wholesale & Retail Manager<br>
+      <strong>Developer Contact:</strong> support@ruyapos.com | WhatsApp: +92 331 5485305
+    </p>
+
+    <h2>1. Introduction & Overview</h2>
+    <p>Ruya POS ("we", "our", or "us") provides an offline-first point-of-sale, wholesale distribution, and inventory
+      bookkeeping mobile application for independent retailers, wholesale distributors, and shopkeepers. We respect your
+      privacy and are committed to protecting your commercial and personal data.</p>
+
+    <h2>2. Core Architecture: Offline-First Principle</h2>
+    <p>Ruya POS is engineered with an <strong>offline-first local database architecture</strong>:</p>
+    <ul>
+      <li><strong>Local Storage:</strong> All business records (products, customer ledgers, supplier bills,
+        transactions, invoices, expenses) are stored securely on your physical device in SQLite.</li>
+      <li><strong>Full Offline Usability:</strong> You can operate Ruya POS indefinitely without an internet connection
+        or cloud account.</li>
+      <li><strong>Total Ownership:</strong> You retain complete control over your store's financial records.</li>
+    </ul>
+
+    <h2>3. Information We Collect</h2>
+    <h3>A. Business Operational Records (Stored Locally on Device)</h3>
+    <p>Inventory counts, product pricing, customer balances, supplier ledgers, sales orders, and receipt configurations
+      are stored locally on your device.</p>
+
+    <h3>B. Account & Cloud Synchronization Data (Optional)</h3>
+    <p>If you activate Cloud Sync, your account email and database records are synchronized to secure PostgreSQL cloud
+      servers (Supabase) protected by Row-Level Security (RLS) policies.</p>
+
+    <h3>C. In-App Purchases & Subscriptions</h3>
+    <p>Subscriptions and license purchases are processed directly by <strong>Google Play In-App Billing</strong> via
+      <strong>RevenueCat</strong>. We <strong>never</strong> collect, receive, or store credit card, debit card, or
+      banking details.</p>
+
+    <h3>D. Device Permissions</h3>
+    <ul>
+      <li><strong>Camera:</strong> Used exclusively for real-time barcode scanning. No photos or video feeds are
+        captured or stored.</li>
+      <li><strong>Bluetooth / Local Network:</strong> Used to connect to ESC/POS thermal receipt printers.</li>
+      <li><strong>Biometrics:</strong> Used to unlock your cashier shift via device hardware enclave. Biometric data
+        never leaves your device.</li>
+      <li><strong>Notifications:</strong> Used for low-stock alerts and daily register closing reminders.</li>
+    </ul>
+
+    <h2>4. Third-Party Service Providers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Privacy Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>In-App purchase processing</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>Subscription receipt validation</td>
+          <td><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy</a></td>
+        </tr>
+        <tr>
+          <td>Supabase</td>
+          <td>Cloud database & multi-terminal sync</td>
+          <td><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Data Security & Storage Safeguards</h2>
+    <p>We implement multi-layered security safeguards, including encrypted AES-256 local database backups, PostgreSQL
+      Row Level Security, salt-hashed PIN access controls, and automatic inactivity lockouts.</p>
+
+    <h2>6. Data Retention & Deletion Rights</h2>
+    <p>You may wipe local data at any time via <strong>Settings -> Advanced -> Reset / Clear Database</strong>. To
+      request permanent deletion of your cloud account and all synced records, email
+      <strong>support@ruyapos.com</strong> or contact WhatsApp at <strong>+92 331 5485305</strong>. Requests are
+      fulfilled within 7 business days.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>For questions or data deletion requests, contact us at:<br>
+      <strong>Email:</strong> support@ruyapos.com<br>
+      <strong>WhatsApp Support:</strong> +92 331 5485305<br>
+      <strong>Website:</strong> <a href="https://ruyapos.com" target="_blank">https://ruyapos.com</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 Ruya Technologies. All rights reserved.
+    </div>
+  </div>
+</body>
+
+</html>
